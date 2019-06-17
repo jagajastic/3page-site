@@ -728,9 +728,24 @@ db.map((post, index) => {
 
 // get the details div item
 const postDetails = document.querySelector("#itemDetails");
-
+// post id
+const postID = localStorage.id;
+// default post
+const stateFullPost = `
+<div class="pt-5 m-3">
+<h2>${db[postID].title.toUpperCase()}</h2>
+<p>
+  ${db[postID].body}
+</p>
+</div>
+`;
+postDetails.innerHTML = stateFullPost;
+// console.log(localStorage.id);
 // get single post
 function singlePost(id) {
+  // save state of the post
+  localStorage.id = id;
+  console.log(localStorage.id);
   // get post details
   const details = `
     <div class="pt-5 m-3">
