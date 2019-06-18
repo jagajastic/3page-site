@@ -1,5 +1,5 @@
 # Setup
 
-Make sure you jave internet connection for the Bootstrap to load.
+Make sure you have internet connection for the Bootstrap to load.
 
-Clone and ipen the Index file on your browser
+Clone and open the Index file on your browser
